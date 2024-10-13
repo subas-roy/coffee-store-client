@@ -26,12 +26,14 @@ const AddCoffee = () => {
       .then(res => res.json())
       .then(data => {
         console.log(data)
-        Swal.fire({
-          title: 'Success!',
-          text: 'User added successfully',
-          icon: 'success',
-          confirmButtonText: 'Cool'
-        })
+        if (data.insertedId) {
+          Swal.fire({
+            title: 'Success!',
+            text: 'Coffee added successfully',
+            icon: 'success',
+            confirmButtonText: 'Cool'
+          })
+        }
       })
   }
 
@@ -110,7 +112,7 @@ const AddCoffee = () => {
             <input type="text" name="photo" placeholder="Photo Url" className="input input-bordered w-full" />
           </div>
         </div>
-        <input className="btn btn-block bg-gray-500 text-white mt-8" type="submit" value="Add" />
+        <input className="btn btn-block bg-gray-500 text-white mt-8" type="submit" value="Add Coffee" />
       </form>
     </div>
   );

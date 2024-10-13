@@ -25,7 +25,7 @@ const CoffeeCard = ({ coffee }) => {
             if (data.deletedCount > 0) {
               Swal.fire({
                 title: "Deleted!",
-                text: "Your file has been deleted.",
+                text: "Coffee has been deleted.",
                 icon: "success"
               });
             }
@@ -50,10 +50,10 @@ const CoffeeCard = ({ coffee }) => {
         </div>
         <div className="card-actions justify-end">
           <div className="join join-vertical space-y-4">
-            <Link to={`/updataCoffee/${_id}`}>
-              <button className="btn join-item">View</button>
+            <button className="btn join-item">View</button>
+            <Link to={`/updateCoffee/${_id}`}>
+              <button className="btn join-item">Edit</button>
             </Link>
-            <button className="btn join-item">Edit</button>
             <button onClick={() => handleDelete(_id)} className="btn join-item bg-red-500">X</button>
           </div>
         </div>
