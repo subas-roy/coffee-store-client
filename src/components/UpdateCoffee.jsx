@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import Links from "./Links";
 
 const UpdateCoffee = () => {
   const coffee = useLoaderData()
@@ -44,6 +45,7 @@ const UpdateCoffee = () => {
       <Helmet>
         <title>Update Coffee | Coffee Store</title>
       </Helmet>
+      l<Links/>
       <h2 className="text-3xl font-extrabold">Update {name}</h2>
       <form onSubmit={handleUpdateCoffee}>
         {/* row name & quantity */}

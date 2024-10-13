@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import Swal from 'sweetalert2'
+import Links from "./Links";
 
 const AddCoffee = () => {
   const handleAddCoffee = event => {
@@ -42,6 +43,7 @@ const AddCoffee = () => {
       <Helmet>
         <title>Add New Coffee | Coffee Store</title>
       </Helmet>
+      <Links/>
       <h2 className="text-3xl font-extrabold">Add New Coffee</h2>
       <form onSubmit={handleAddCoffee}>
         {/* row name & quantity */}
