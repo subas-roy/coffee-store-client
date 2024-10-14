@@ -7,6 +7,7 @@ const Links = () => {
       <ul className='flex gap-4 justify-center'>
         <li><NavLink className="btn btn-link" to={'/'}>Home</NavLink></li>
         <li><NavLink className="btn btn-link" to={'/addCoffee'}>Add New Coffee</NavLink></li>
+        <li><NavLink className="btn btn-link" to={'/user'}>Users</NavLink></li>
       </ul>
   </div>
   );
