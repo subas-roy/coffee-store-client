@@ -41,11 +41,11 @@ const UpdateCoffee = () => {
       })
   }
   return (
-    <div className="bg-[#F4F3F0] p-24">
+    <div className="bg-[#F4F3F0] px-24 py-2">
       <Helmet>
         <title>Update Coffee | Coffee Store</title>
       </Helmet>
-      l<Links/>
+      <Links/>
       <h2 className="text-3xl font-extrabold">Update {name}</h2>
       <form onSubmit={handleUpdateCoffee}>
         {/* row name & quantity */}

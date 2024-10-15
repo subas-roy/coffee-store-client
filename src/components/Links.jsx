@@ -9,6 +9,7 @@ const Links = () => {
         <li><NavLink className="btn btn-link" to={'/addCoffee'}>Add New Coffee</NavLink></li>
         <li><NavLink className="btn btn-link" to={'/user'}>Users</NavLink></li>
         <li><NavLink className="btn btn-link" to={'/signup'}>Sign Up</NavLink></li>
+        <li><NavLink className="btn btn-link" to={'/signin'}>Sign In</NavLink></li>
       </ul>
   </div>
   );
