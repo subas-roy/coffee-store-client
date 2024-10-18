@@ -5,10 +5,10 @@ import Links from "./Links";
 
 const Users = () => {
   const loadedUsers = useLoaderData();
-  const [users, setUsers] = useState(loadedUsers);
+  const [users, setUsers] = useState(loadedUsers || []);
   const handleDelete = id => {
     // make sure user is confirmed to delete
-    fetch(`http://localhost:5000/user/${id}`, {
+    fetch(`https://coffee-store-server-nu-plum.vercel.app/user/${id}`, {
       method: 'DELETE',
     })
     .then(res => res.json())

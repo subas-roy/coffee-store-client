@@ -14,10 +14,10 @@ function App() {
       <title>Home | Coffee Store</title>
     </Helmet>
       <Links/>
-      <h1 className='text-6xl text-purple-600 my-8 text-center'>Hot Hot cold coffees: {coffees.length}</h1>
+      <h1 className='text-6xl text-purple-600 my-8 text-center'>Hot Hot cold coffees: {Array.isArray(coffees) && coffees.length}</h1>
       <div className='grid grid-cols-2 gap-4'>
         {
-          coffees.map(coffee => <CoffeeCard key={coffee._id} coffee={coffee} coffees={coffees} setCoffees={setCoffees}/>)
+          coffees?.map(coffee => <CoffeeCard key={coffee._id} coffee={coffee} coffees={coffees} setCoffees={setCoffees}/>)
         }
       </div>
     </div>
